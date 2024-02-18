@@ -13,6 +13,7 @@ import HeroImage from "../Components/Hero/HeroImage";
 import Vision from "../Components/Vision/Vision.jsx";
 import Donate from '../assets/landing/donate.jpeg';
 
+
 export default function LandingPage() {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname);
