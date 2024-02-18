@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import API_URL from '../../_helper';
 import { useNavigate } from 'react-router-dom';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 export default function VolunteerRegistrationForm() {
     const { register, handleSubmit } = useForm();

@@ -4,7 +4,7 @@ import Hero from "../Components/Hero/Hero";
 import FeedbackForm from "../Components/FeedbackForm/FeedbackForm";
 import Faqs from "../Components/FAQs/Faqs";
 import Tagline from "../Components/TagLine/Tagline";
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 // import FoodDrive from "../assets/landing/fooddrive.jpg";
 // import PlantationDrive from "../assets/landing/plantationdrive.jpeg";
 // import MainHeading from "../Components/mainHeading/MainHeading";
@@ -16,7 +16,8 @@ import Donate from '../assets/landing/donate.jpeg';
 
 export default function LandingPage() {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send({ hitType: "pageview", page: "/landingpage", title: "website visit" });
+    // ReactGA.pageview(window.location.pathname);
   }, [])
   return (
     <>
