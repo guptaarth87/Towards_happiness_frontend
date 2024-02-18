@@ -13,7 +13,10 @@ import ScrollToTop from './ScrollToTop';
 import GallaryPage from './Pages/GallaryPage';
 import Payments from './Pages/Payments';
 import VolunteeringEligibility from './Components/VolunteerEligibility/VolunteerEligibility';
+import ReactGa from 'react-ga';
 
+const TRACKING_ID = 'G-P3Y2PN1S2Q';
+ReactGa.initialize(TRACKING_ID)
 function App() {
   
 
